@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  --base-color: #5c573e;
+  --link-color: #8f8864;
+}
+
+body {
+  background-color: #090909;
+  color: var(--base-color);
+  font-family: Epilogue, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.pause-resume-shuffle {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: larger;
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+.logo {
+  height: 30rem;
+  text-align: center;
+  font-size: 0;
+}
+.logo-letter {
+  height: 100%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 0.5rem;
+  font-size: small;
+  text-align: center;
+}
+.footer a {
+  color: var(--link-color);
+}
