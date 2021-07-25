@@ -4,6 +4,11 @@ html {
   --base-color: #5c573e;
   --link-color: #8f8864;
 }
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
 
 body {
   background-color: #090909;
@@ -12,9 +17,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding-top: 20vh;
   margin: 0;
 }
+
 
 .pause-resume-shuffle {
   position: absolute;
@@ -33,15 +39,21 @@ body {
 }
 .logo-letter {
   height: 100%;
+  object-fit: cover;
   display: inline-block;
   cursor: pointer;
+}
+@media (max-width: 800px) {
+  .logo {
+    height: 15rem;
+  }
 }
 
 .footer {
   position: absolute;
   bottom: 0;
   padding-bottom: 0.5rem;
-  font-size: small;
+  font-size: 0.75rem;
   text-align: center;
 }
 .footer a {
